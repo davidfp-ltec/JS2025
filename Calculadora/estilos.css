@@ -1,0 +1,70 @@
+body {
+    background-color: #000;
+    color: red;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    color: red;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid red;
+    font-size: 0.9em;
+}
+
+
+.calculadora {
+    background-color: #111;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 10px red;
+    width: max-content;
+}
+
+#pantalla {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: red;
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 60px); /* 4 columnas */
+    gap: 10px;
+    justify-content: center;
+}
+
+.botones button {
+    height: 60px;
+    font-size: 1.2em;
+    background-color: #222;
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.botones button:hover {
+    background-color: #333;
+}
+
+.cero {
+    grid-column: span 3; /* Ocupa dos columnas */
+}
